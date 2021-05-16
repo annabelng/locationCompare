@@ -1,7 +1,7 @@
 /**
  * Edits a post on the page
  */
-function updatePost(event) {
+function updatePost(editBtn) {
     
 }
 

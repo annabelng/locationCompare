@@ -1,7 +1,7 @@
 /**
  * Deletes a post from the page
  */
-function deletePost(event) {
+function deletePost(deleteBtn) {
 
 }
 
