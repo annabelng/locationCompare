@@ -3,7 +3,7 @@ import { createPostHTML } from './createPost.js';
 /**
  * Display posts saved in local storage
  */
-function readPost() {
+function readPosts() {
 
     // TODO: Grab the posts array from local storage
 
@@ -14,4 +14,4 @@ function readPost() {
     // to the end of the post list on the web page
 }
 
-export { readPost };
+export { readPosts };

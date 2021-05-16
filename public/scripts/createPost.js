@@ -1,27 +1,36 @@
-const REPLACE_ME = 'REPLACE ME';
+const REPLACE_ID = 'Replace this with the id of the post';
+const REPLACE_TITLE = 'Replace this with the title of the post';
+const REPLACE_SUMMARY = 'Replace this with the summary of the post';
 
 /**
- * Creates a post and adds it to the page
+ * Creates a post from the values filled in on the form and adds it to the page
  */
 function createPost() {
 
-    // TODO: Collect values from form and store them in an object literal to 
-    // represent a post
+    // You can get rid of this console.log statement once you've set the
+    // event listener correctly
+    console.log('You set the event listener correctly!!!');
+
+    // TODO: Collect the values from the form and store them in an 
+    // object literal to represent a post
     let post = {
-        title: REPLACE_ME,
-        summary: REPLACE_ME,
-        id: REPLACE_ME
+        id: (new Date().getTime()).toString(),
+        title: REPLACE_TITLE,
+        summary: REPLACE_SUMMARY
     };
 
-    // TODO: Clear the form entries
+    // TODO: Clear the form entries so they don't have the previous input
 
-    
-    // TODO: Create HTML for the post by passing in post object created earlier
-    // as a parameter to the createPostHTML function
+    /* 
+     * TODO: Create HTML for the post by passing in post object created earlier
+     * as a parameter to the createPostHTML function. Make sure to implement
+     * the createPostHTML function now before moving on
+     */
 
-    // TODO: Add the HTML for the post into the output tag in index.html
+    // TODO: Add the HTML for the post that was created in the createPostHTML
+    // function into the output tag in index.html
 
-    /**
+    /* 
      * TODO: Save the post to local storage by passing in the post object as 
      * a parameter to the save function
      * DON'T DO UNTIL SPECIFIED IN THE WRITE-UP
@@ -52,16 +61,17 @@ function savePost(post) {
  */
 function createPostHTML(post) {
 
-    let postOut = 
-        `<article id="${REPLACE_ME}">
-            <h2>${REPLACE_ME}</h2>
-            <p>${REPLACE_ME}</p>
+    // Replace the inside of each ${} with the correct values described
+    let postHTML = 
+        `<article id="${REPLACE_ID}">
+            <h2>${REPLACE_TITLE}</h2>
+            <p>${REPLACE_SUMMARY}</p>
             <br>
             <button onclick="editPostArticle(this)"><i class="fas fa-edit"></i> Edit</button>
             <button onclick="deletePostArticle(this)"><i class="fas fa-trash"></i> Delete</button>
         </article>`;
 
-    return postOut;
+    return postHTML;
 }
 
 export { createPost, createPostHTML };

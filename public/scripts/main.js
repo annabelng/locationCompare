@@ -1,12 +1,12 @@
 import { createPost } from './createPost.js';
-import { readPost } from './readPost.js';
+import { readPosts } from './readPosts.js';
 
 function init() {
 
-    // TODO: Select ok button and add an event listener to it using the add
-    // function that's imported above
+    // TODO: First, select the form button. Then, add an event listener to it
+    // that calls the createPost function when the button is clicked.
     
-    readPost();
+    readPosts();
 }
 
 document.addEventListener('DOMContentLoaded', init);
