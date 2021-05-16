@@ -1,4 +1,4 @@
-import { add } from './addPost.js';
+import { createPost } from './createPost.js';
 import { readPost } from './readPost.js';
 
 function init() {
@@ -9,4 +9,4 @@ function init() {
     readPost();
 }
 
-window.addEventListener('DOMContentLoaded', init);
+document.addEventListener('DOMContentLoaded', init);

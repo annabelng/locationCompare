@@ -3,7 +3,7 @@ const REPLACE_ME = 'REPLACE ME';
 /**
  * Creates a post and adds it to the page
  */
-function add() {
+function createPost() {
 
     // TODO: Collect values from form and store them in an object literal to 
     // represent a post
@@ -32,7 +32,7 @@ function add() {
  * Saves a post object to local storage
  * @param {object} post - The post contents to save
  */
-function save(post) {
+function savePost(post) {
 
     // TODO: Grab the posts array from local storage
 
@@ -64,4 +64,4 @@ function createPostHTML(post) {
     return postOut;
 }
 
-export { add, createPostHTML };
+export { createPost, createPostHTML };

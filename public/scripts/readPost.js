@@ -1,4 +1,4 @@
-import { createPostHTML } from './addPost.js';
+import { createPostHTML } from './createPost.js';
 
 /**
  * Display posts saved in local storage
