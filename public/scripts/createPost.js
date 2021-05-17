@@ -45,12 +45,12 @@ function savePost(post) {
 
     // TODO: Grab the posts array from local storage
 
-    // TODO: Do a null check. If the posts array is null, then set to empty 
-    // array and else set to current array
+    // TODO: Do a null check. If the posts array is null, then set to an empty 
+    // array. Otherwise, the posts array exists and you can continue 
 
     // TODO: Add the passed in post parameter to the array
 
-    // TODO: Update local storage with the new array
+    // TODO: Update local storage with the new array (Since a post was added)
 }
 
 /**
