@@ -7,6 +7,8 @@
     <title>File to get familiar with JavaScript</title>
 </head>
 <body>
+    <h1>JavaScript Practice</h1>
+    <p>Open up the console to see what our script is doing!</p>
     <script>
 
         /**
@@ -34,6 +36,22 @@
 
         // Print the returned last number stored in lastNum
         console.log(`printNums returned the last number: ${lastNum}`);
+    
+        /**
+         * This is a template literal and is a handy way of combining variables
+         * strings. The main difference is that a template literal uses the 
+         * backquote ` right above the tab key. 
+         * 
+         * This allows us to embed JavaScript code into our strings instead of
+         * concatenating strings and other objects which can get messy.
+         * 
+         * See the examples below for more :P
+         */
+
+        // Differnce between `` and ''
+        let tempNum = 1;
+        console.log('string literal example (' + tempNum + ')');
+        console.log(`template literal example (${tempNum})`);
 
         /*
         The syntax used above is an alternative to adding/concatenating strings
