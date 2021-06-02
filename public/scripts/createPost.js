@@ -38,22 +38,6 @@ function createPost() {
 }
 
 /**
- * Saves a post object to local storage
- * @param {object} post - The post contents to save
- */
-function savePost(post) {
-
-    // TODO: Grab the posts array from local storage
-
-    // TODO: Do a null check. If the posts array is null, then set to an empty 
-    // array. Otherwise, the posts array exists and you can continue 
-
-    // TODO: Add the passed in post parameter to the array
-
-    // TODO: Update local storage with the new array (Since a post was added)
-}
-
-/**
  * This is the template HTML for a blog post, and all that needs to be done
  * is filling in the id, title, and summary for a post.
  * @param {object} post - The post to translate into HTML
@@ -67,11 +51,27 @@ function createPostHTML(post) {
             <h2>${REPLACE_TITLE}</h2>
             <p>${REPLACE_SUMMARY}</p>
             <br>
-            <button onclick="editPost(this)"><i class="fas fa-edit"></i> Edit</button>
+            <button onclick="updatePost(this)"><i class="fas fa-edit"></i> Edit</button>
             <button onclick="deletePost(this)"><i class="fas fa-trash"></i> Delete</button>
         </article>`;
 
     return postHTML;
+}
+
+/**
+ * Saves a post object to local storage
+ * @param {object} post - The post contents to save
+ */
+function savePost(post) {
+
+    // TODO: Grab the posts array from local storage
+
+    // TODO: Do a null check. If the posts array is null, then set to an empty 
+    // array. Otherwise, the posts array exists and you can continue 
+
+    // TODO: Add the passed in post parameter to the array
+
+    // TODO: Update local storage with the new array (Since a post was added)
 }
 
 export { createPost, createPostHTML };
