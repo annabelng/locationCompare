@@ -7,10 +7,10 @@ function updatePost(editBtn) {
 
     /*
      * TODO: Using the edit button that was passed in as a parameter, get access
-     * to its parent element (The article element which represents the entire post)
+     * to its parent element (The li element which represents the entire post)
      */
 
-    //TODO: Get the post title and summary not that you have the post
+    //TODO: Get the post title and summary now that you have the post
     
     /*
      * TODO: If the post title is not editable, then make it editable.
@@ -30,9 +30,9 @@ function updatePost(editBtn) {
      */
 
     /*
-     * TODO: If the post and summary aren't editable, then pass a post object
-     * literal to the updatePostStorage function. The post object literal
-     * should contain the post id, the updated title, and the updated summary.
+     * TODO: If the post title and summary aren't editable, then pass the post
+     * id, the updated title, and the updated summary to the updatePostStorage
+     * function.
      */
 }
 

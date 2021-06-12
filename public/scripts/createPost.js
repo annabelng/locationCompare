@@ -28,7 +28,7 @@ function createPost() {
      */
 
     // TODO: Add the HTML for the post that was created in the createPostHTML
-    // function into the output tag in index.html
+    // function into the ul tag in index.html
 
     /* 
      * TODO: Save the post to local storage by passing in the post object as 
@@ -47,13 +47,13 @@ function createPostHTML(post) {
 
     // Replace the inside of each ${} with the correct values described
     let postHTML = 
-        `<article id="${REPLACE_ID}">
+        `<li id="${REPLACE_ID}">
             <h2>${REPLACE_TITLE}</h2>
             <p>${REPLACE_SUMMARY}</p>
             <br>
             <button onclick="updatePost(this)"><i class="fas fa-edit"></i> Edit</button>
             <button onclick="deletePost(this)"><i class="fas fa-trash"></i> Delete</button>
-        </article>`;
+        </li>`;
 
     return postHTML;
 }

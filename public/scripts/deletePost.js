@@ -7,14 +7,14 @@ function deletePost(deleteBtn) {
 
     /*
      * TODO: Using the delete button that was passed in as a parameter, get access
-     * to its parent element (The article element which represents the entire post)
+     * to its parent element (The li element which represents the entire post)
      */
 
-    // TODO: Once you have the article element, delete it from the page
+    // TODO: Once you have the li element, delete it from the page
 
     /*
-     * TODO: Delete the post in local storage by passing in the article
-     * element's id to the deletePostStorage function
+     * TODO: Delete the post in local storage by passing in the li element's
+     * id to the deletePostStorage function
      * DON'T DO UNTIL SPECIFIED IN THE WRITE-UP
      */
 }
