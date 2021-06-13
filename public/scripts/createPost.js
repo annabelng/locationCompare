@@ -51,8 +51,8 @@ function createPostHTML(post) {
             <h2>${REPLACE_TITLE}</h2>
             <p>${REPLACE_SUMMARY}</p>
             <br>
-            <button onclick="updatePost(this)"><i class="fas fa-edit"></i> Edit</button>
-            <button onclick="deletePost(this)"><i class="fas fa-trash"></i> Delete</button>
+            <button onclick="updatePost(this)">Edit</button>
+            <button onclick="deletePost(this)">Delete</button>
         </li>`;
 
     return postHTML;
