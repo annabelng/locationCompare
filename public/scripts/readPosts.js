@@ -12,7 +12,7 @@ function readPosts() {
 
     /*
      * TODO: For each post in the posts array, create the post HTML using the
-     * createPostHTML function and append to the end of the post list on the
+     * createPostHTML function and append it to the end of the post list on the
      * web page
      */
 }
