@@ -8,8 +8,13 @@
 </head>
 <body>
     <h1>JavaScript Practice</h1>
-    <p>Open up the console to see what our script is doing!</p>
+    <p>Open up the console to see what our script is doing! Don't Edit me!</p>
+    <p id="edit">DOM Edit me!</p>
+    <a class="link">Link to something awesome</a>
     <script>
+        ///////////////////////////////////////////////////////////////////////
+        // JavaScript Basics
+        ///////////////////////////////////////////////////////////////////////
 
         /**
          * A simple function that prints all the numbers up until the provided
@@ -22,11 +27,12 @@
 
                 // If we reach the last number, then print the number and return it
                 if (i === num) {
+                    // this is a print statement
                     console.log('This is the last number: ' + i);
                     return num;
                 }
 
-                // Print the current number
+                // Prints the current number
                 console.log('This is not the last number: ' + i)
             }
         }
@@ -36,6 +42,12 @@
 
         // Print the returned last number stored in lastNum
         console.log(`printNums returned the last number: ${lastNum}`);
+
+
+
+        ///////////////////////////////////////////////////////////////////////
+        // Template Literals
+        ///////////////////////////////////////////////////////////////////////
     
         /**
          * This is a template literal and is a handy way of combining variables
@@ -53,17 +65,27 @@
         console.log('string literal example (' + tempNum + ')');
         console.log(`template literal example (${tempNum})`);
 
-        /*
-        The syntax used above is an alternative to adding/concatenating strings
-        and variables together, and the syntax is known as a template 
-        literal/string. The basic difference between template strings and 
-        regular strings is that template strings use the ` character instead of
-        the ' character. Then you can use the ${} syntax inside of the template
-        string to represent a placeholder for a variable that will later be 
-        filled in by the variable's value. There's more advanced features that
-        you can make use of through template strings, but this is the basic
-        idea that you'll want to know for this starter kit.
-        */
+        
+
+        ///////////////////////////////////////////////////////////////////////
+        // The DOM
+        ///////////////////////////////////////////////////////////////////////
+        const REPLACE_ME = '';
+        // 1. Log the document here!
+        console.log();
+        // 2. Log the <h1> tag here!
+        let queryTag = document.querySelector(REPLACE_ME);
+        console.log(queryTag);
+        // 3. Log the <DOM Edit me!> here!
+        let editTag = document.getElementById(REPLACE_ME);
+        console.log(editTag);
+            // Edits the id="edit" tag to "I am become master of DOM"
+        editTag.innerHTML = "I am become master of DOM";
+        // 4. Select and store the class "link"
+        let linkClass = document.querySelector('link'); // what is this class selector missing?
+        console.log(linkClass);
+            // Adds the property, href, https://www.youtube.com/watch?v=dQw4w9WgXcQ
+        linkClass.setAttribute('href', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
     </script>
 </body>
 </html>
