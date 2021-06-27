@@ -1,11 +1,22 @@
 /* Credit to form styling from MDN https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form */
+*{
+  font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+  padding: 70px 20px;
+}
 
 form {
     /* Center the form on the page */
     margin: 0 auto;
-    width: 500px;
+    width: 400px;
     /* Form outline */
-    padding: 1em;
+    padding: 2em;
     border: 1px solid #CCC;
     border-radius: 1em;
 }
@@ -13,11 +24,11 @@ form {
 ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 20 px;
 }
 
 form li + li {
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 label {
@@ -32,6 +43,7 @@ textarea {
     /* To make sure that all text fields have the same font settings
         By default, textareas have a monospace font */
     font: 1em sans-serif;
+    color: #4E82B2;
 
     /* Uniform text field size */
     width: 300px;
@@ -57,13 +69,18 @@ textarea {
 
 .button {
     /* Align buttons with the text fields */
-    padding-left: 90px; /* same size as the label elements */
+    margin: 10 auto;
+    width: 800px;
+    padding-left: 85px; /* same size as the label elements */
+
 }
 
 button {
     /* This extra margin represent roughly the same space as the space
     between the labels and their text fields */
     margin-left: .5em;
+    background-color: #F49277;
+    padding: .5em;
 }
 
 
@@ -91,7 +108,8 @@ p {
 }
 
 button {
-    cursor: pointer;   
+    cursor: pointer;
+
 }
 
 button:hover {
